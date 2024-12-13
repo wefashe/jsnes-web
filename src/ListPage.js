@@ -29,7 +29,6 @@ class ListPage extends Component {
 
               <ListGroup className="mb-4">
                 {Object.keys(config.ROMS)
-                  .sort()
                   .map(key => (
                     <Link
                       key={key}
