@@ -10,8 +10,8 @@ import {
 import { Controller } from "jsnes";
 import ControlMapperRow from "./ControlMapperRow";
 
-const GAMEPAD_ICON = "../img/nes_controller.png";
-const KEYBOARD_ICON = "../img/keyboard.png";
+const GAMEPAD_ICON = process.env.PUBLIC_URL + "/img/nes_controller.png";
+const KEYBOARD_ICON = process.env.PUBLIC_URL + "/img/keyboard.png";
 
 class ControlsModal extends Component {
   constructor(props) {
