@@ -4,7 +4,7 @@ const config = {
   ROMS: {
     1942: {
       name: "1942",
-      url: "/roms/classic/1942.nes"
+      url: "roms/classic/1942.nes"
     },
     mario: {
       name: "超级玛丽",
