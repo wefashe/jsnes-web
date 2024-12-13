@@ -40,7 +40,7 @@ class RunPage extends Component {
           <ul className="navbar-nav" style={{ width: "200px" }}>
             <li className="navitem">
               <Link to="/" className="nav-link">
-                &lsaquo; Back
+                &lsaquo; 返回
               </Link>
             </li>
           </ul>
@@ -57,7 +57,7 @@ class RunPage extends Component {
                 onClick={this.toggleControlsModal}
                 className="mr-3"
               >
-                Controls
+                键盘设置
               </Button>
               <Button
                 outline
@@ -65,7 +65,7 @@ class RunPage extends Component {
                 onClick={this.handlePauseResume}
                 disabled={!this.state.running}
               >
-                {this.state.paused ? "Resume" : "Pause"}
+                {this.state.paused ? "恢复" : "暂停"}
               </Button>
             </li>
           </ul>

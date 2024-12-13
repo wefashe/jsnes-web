@@ -2,23 +2,22 @@ import { Controller } from "jsnes";
 
 // Mapping keyboard code to [controller, button]
 const KEYS = {
-  88: [1, Controller.BUTTON_A, "X"], // X
-  89: [1, Controller.BUTTON_B, "Y"], // Y (Central European keyboard)
-  90: [1, Controller.BUTTON_B, "Z"], // Z
-  17: [1, Controller.BUTTON_SELECT, "Right Ctrl"], // Right Ctrl
-  13: [1, Controller.BUTTON_START, "Enter"], // Enter
-  38: [1, Controller.BUTTON_UP, "Up"], // Up
-  40: [1, Controller.BUTTON_DOWN, "Down"], // Down
-  37: [1, Controller.BUTTON_LEFT, "Left"], // Left
-  39: [1, Controller.BUTTON_RIGHT, "Right"], // Right
-  103: [2, Controller.BUTTON_A, "Num-7"], // Num-7
-  105: [2, Controller.BUTTON_B, "Num-9"], // Num-9
-  99: [2, Controller.BUTTON_SELECT, "Num-3"], // Num-3
-  97: [2, Controller.BUTTON_START, "Num-1"], // Num-1
-  104: [2, Controller.BUTTON_UP, "Num-8"], // Num-8
-  98: [2, Controller.BUTTON_DOWN, "Num-2"], // Num-2
-  100: [2, Controller.BUTTON_LEFT, "Num-4"], // Num-4
-  102: [2, Controller.BUTTON_RIGHT, "Num-6"] // Num-6
+  75: [1, Controller.BUTTON_A, "K"], // 玩家一 A键
+  74: [1, Controller.BUTTON_B, "J"], // 玩家一 B键
+  70: [1, Controller.BUTTON_SELECT, "F"], // 玩家一 切换
+  72: [1, Controller.BUTTON_START, "H"], // 玩家一 开始
+  87: [1, Controller.BUTTON_UP, "W"], // 玩家一 上
+  83: [1, Controller.BUTTON_DOWN, "S"], // 玩家一 下
+  65: [1, Controller.BUTTON_LEFT, "A"], // 玩家一 左
+  68: [1, Controller.BUTTON_RIGHT, "D"], // 玩家一 右
+  13: [2, Controller.BUTTON_A, "Enter"], // 玩家二 A键
+  99: [2, Controller.BUTTON_B, "3"], // 玩家二 B键
+  97: [2, Controller.BUTTON_SELECT, "1"], // 玩家二 切换
+  98: [2, Controller.BUTTON_START, "2"], // 玩家二 开始
+  38: [2, Controller.BUTTON_UP, "↑"], // 玩家二 上
+  40: [2, Controller.BUTTON_DOWN, "↓"], // 玩家二 下
+  37: [2, Controller.BUTTON_LEFT, "←"], // 玩家二 左
+  39: [2, Controller.BUTTON_RIGHT, "→"] // 玩家二 右
 };
 
 export default class KeyboardController {

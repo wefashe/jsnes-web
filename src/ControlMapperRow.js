@@ -153,7 +153,7 @@ class ControlMapperRow extends Component {
   }
 
   render() {
-    const waitingText = "Press key or button...";
+    const waitingText = "按下键盘进行设置...";
     return (
       <tr>
         <td>{this.props.buttonName}</td>

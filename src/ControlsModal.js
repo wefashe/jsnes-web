@@ -157,14 +157,14 @@ class ControlsModal extends Component {
         toggle={this.props.toggle}
         className="ControlsModal"
       >
-        <ModalHeader toggle={this.props.toggle}>Controls</ModalHeader>
+        <ModalHeader toggle={this.props.toggle}>键盘设置</ModalHeader>
         <ModalBody>
           <Table>
             <thead>
               <tr>
-                <th>Button</th>
+                <th>按键</th>
                 <th>
-                  Player 1
+                  玩家一
                   <img
                     className="controller-icon"
                     src={this.state.controllerIcon[0]}
@@ -172,7 +172,7 @@ class ControlsModal extends Component {
                   />
                 </th>
                 <th>
-                  Player 2
+                  玩家二
                   <img
                     className="controller-icon"
                     src={this.state.controllerIcon[1]}
@@ -183,7 +183,7 @@ class ControlsModal extends Component {
             </thead>
             <tbody>
               <ControlMapperRow
-                buttonName="Left"
+                buttonName="←"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_LEFT}
                 prevButton={Controller.BUTTON_SELECT}
@@ -192,7 +192,7 @@ class ControlsModal extends Component {
                 gamepadConfig={this.state.gamepadConfig}
               />
               <ControlMapperRow
-                buttonName="Right"
+                buttonName="→"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_RIGHT}
                 prevButton={Controller.BUTTON_LEFT}
@@ -201,7 +201,7 @@ class ControlsModal extends Component {
                 gamepadConfig={this.state.gamepadConfig}
               />
               <ControlMapperRow
-                buttonName="Up"
+                buttonName="↑"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_UP}
                 prevButton={Controller.BUTTON_RIGHT}
@@ -210,7 +210,7 @@ class ControlsModal extends Component {
                 gamepadConfig={this.state.gamepadConfig}
               />
               <ControlMapperRow
-                buttonName="Down"
+                buttonName="↓"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_DOWN}
                 prevButton={Controller.BUTTON_UP}
@@ -237,7 +237,7 @@ class ControlsModal extends Component {
                 gamepadConfig={this.state.gamepadConfig}
               />
               <ControlMapperRow
-                buttonName="Start"
+                buttonName="开始"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_START}
                 prevButton={Controller.BUTTON_B}
@@ -246,7 +246,7 @@ class ControlsModal extends Component {
                 gamepadConfig={this.state.gamepadConfig}
               />
               <ControlMapperRow
-                buttonName="Select"
+                buttonName="切换"
                 currentPromptButton={this.state.currentPromptButton}
                 button={Controller.BUTTON_SELECT}
                 prevButton={Controller.BUTTON_START}
@@ -259,7 +259,7 @@ class ControlsModal extends Component {
         </ModalBody>
         <ModalFooter>
           <Button outline color="primary" onClick={this.props.toggle}>
-            Close
+            关闭
           </Button>
         </ModalFooter>
       </Modal>

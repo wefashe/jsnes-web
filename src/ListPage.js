@@ -24,13 +24,7 @@ class ListPage extends Component {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <header className="mb-4">
-                <h1 className="mb-3">JSNES</h1>
-                <p>
-                  A JavaScript NES emulator.{" "}
-                  <a href="https://github.com/bfirsh/jsnes">
-                    Source on GitHub.
-                  </a>
-                </p>
+                <h1 className="mb-3">FC 游戏在线玩</h1>
               </header>
 
               <ListGroup className="mb-4">
@@ -49,13 +43,12 @@ class ListPage extends Component {
               </ListGroup>
 
               <p>
-                Or, drag and drop a ROM file onto the page to play it. (Google
-                may help you find them.)
+                没找到喜欢的游戏？直接将游戏 NES ROM 拖动到本页面即可在线运行
               </p>
 
               {this.state.romLibrary.length > 0 ? (
                 <div>
-                  <p>Previously played:</p>
+                  <p>最近运行:</p>
 
                   <ListGroup className="mb-4">
                     {this.state.romLibrary
